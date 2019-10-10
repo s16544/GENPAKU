@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="technology.css">
+    <script type="text/javascript" src="test.js"></script>
+    <title>玄白</title>
+  </head>
+
+  <body>
+    <menu class="regular">
+      <ul>
+    		<li><a href="index.html">ホーム</a></li>
+    		<li><a href="about.html">玄白について</a></li>
+    		<li><a href="technology.html">玄白の機能</a></li>
+    		<li><a href="form.html">質問</a></li>
+    	</ul>
+    </menu>
+
+    <p>
+    <img src="menu.jpg" alt="menu" align="left" hspace="60" border="1" width="500" height="300">
+    <h1><font color="243673">メニュー画面</font></h1>
+    <p>このモードは過去の手術の映像を3Dモデルで再生し，</p>
+    <p>それを角度を変えて見たり，</p>
+    <p>拡大してみたりすることで経験がない方でも</p>
+    <p>内視鏡手術を体験することができます．</p>
+    </p>
+    <br clear="left">
+
+    <div style="margin-bottom:50px"></div>
+
+    <fieldset style="border:2px solid #243673;"><legend><h1><font color="243673">2つの再生機能</font></h1></legend>
+      <div style="margin-bottom:30px"></div>
+      <p>
+      <img src="s.jpg" alt="スタティック" align="left" hspace="60" border="1" width="400" height="200">
+      <h1><font color="243673">スタティックモード</font></h1>
+      <p>このモードは過去の手術の映像を3Dモデルで再生し，</p>
+      <p>それを角度を変えて見たり，</p>
+      <p>拡大してみたりすることで経験がない方でも</p>
+      <p>内視鏡手術を体験することができます．</p>
+      </p>
+
+    <br clear="left">
+    <div style="margin-bottom:50px"></div>
+
+    <p>
+    <img src="d.jpg" alt="ダイナミック" align="left" hspace="60" border="1" width="400" height="200">
+    <h1><font color="243673">ダイナミックモード</font></h1>
+    <p>このモードは実際に手術をしながら</p>
+    <p>内蔵の3Dモデルをリアルタイムで見ることができます．</p>
+    <p>拡大してみたりすることで経験がない方でも</p>
+    <p>内視鏡手術を体験することができます．</p>
+    </p>
+    <div style="margin-bottom:70px"></div>
+    </fieldset>
+
+    <br clear="left">
+
+    <div style="margin-bottom:50px"></div>
+
+    <center>
+    <h1><font color="243673">3Dモデルの生成について</font></h1>
+    <p>映像の立体感を把握するステレオ視という技術を応用して，</p>
+    <p>内視鏡を2つ使用し左右のわずかな差分から視差画像を生成します。</p>
+    <p>その視差画像からポリゴンを用いてデータを可視化し，3Dモデルを表現します。</p>
+
+    <div style="display:inline-block; text-align:left; margin-bottom: 5px; border: 3px solid #696969; border-radius: 5px;">
+    <ol>
+      <li>内視鏡の映像と同じ解像度の平らなPolygonを生成します．</li>
+      <li>olygon一つ一つの頂点を各画素と対応させ，<br>
+      それぞれのグレースケールの数値を各頂点に反映させます．<br></li>
+      <li>このとき，各頂点の奥行きであるZ座標とグレースケールの数値を対応させることで，<br>
+      Polygonに奥行きを持たせることができます．<br></li>
+      <li>画像をコマ送りのように読み込み，反映することで，<br>
+      映像を見ているかのように使用することができます．</li>
+    </ol>
+    </div>
+
+    <div style="margin-bottom:10px"></div>
+    <TABLE>
+     <TR ALIGN=CENTER>
+      <TD><IMG SRC=polygon.jpg width="300" height="400" border="1">
+      <BR>3Dモデル生成前</TD>
+      <TD><IMG SRC=polygon2.jpg width="300" height="400" border="1">
+      <BR>3Dモデル生成後</TD>
+     </TR>
+    </TABLE>
+  </center>
+
+
+    <p>© salesian polytechnic</p>
+
+  </body>
+</html>
